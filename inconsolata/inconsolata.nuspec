@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>inconsolata</id>
+        <version>2014.12.31</version>
+        <title>Inconsolata</title>
+        <authors>Raph Levien</authors>
+        <owners>schelljw</owners>
+        <licenseUrl>http://scripts.sil.org/OFL</licenseUrl>
+        <projectUrl>http://www.levien.com/type/myfonts/inconsolata.html</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Inconsolata is my first serious original font release. It is a monospace font, designed for code listings and the like, in print. There are a great many "programmer fonts," designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering.
+</description>
+        <tags>font monospace inconsolata mono fixedWidth fixed</tags>
+    </metadata>
+</package>
