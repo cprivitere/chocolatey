@@ -2,15 +2,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>inconsolata</id>
-        <version>2014.12.31</version>
+        <version>2017.05.01</version>
         <title>Inconsolata</title>
         <authors>Raph Levien</authors>
-        <owners>schelljw</owners>
+        <owners>Nubuo</owners>
         <licenseUrl>http://scripts.sil.org/OFL</licenseUrl>
         <projectUrl>http://www.levien.com/type/myfonts/inconsolata.html</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Inconsolata is my first serious original font release. It is a monospace font, designed for code listings and the like, in print. There are a great many "programmer fonts," designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering.
 </description>
         <tags>font monospace inconsolata mono fixedWidth fixed</tags>
+        <packageSourceUrl>https://github.com/cprivite/chocolatey/tree/master/inconsolata</packageSourceUrl>
+        <releaseNotes>
+          2017.05.01
+
+          Doing a quick update to the release to get it downloading the current font files. Inconsolata is now version 2.001. The version is the data that 2.001 was committed to the repository.
+
+          There's more to be done for this package like making it work unattended, not using raw github links for the downloads, and actually doing an uninstall of the fonts, but that will need to come later.
+
+          If you are upgrading from the older 2014.12.31 release, the older font will still be in your font directory (the older font is a .otf, the newer ones are .ttf). You'll need to manually delete it via the Windows Font control panel. I considered deleting it with a modify script, but given how raw this package is it didn't feel like a good plan to manually delete files out of your system font directory.
+        </releaseNotes>
     </metadata>
 </package>
