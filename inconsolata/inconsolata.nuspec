@@ -6,21 +6,33 @@
         <title>Inconsolata</title>
         <authors>Raph Levien</authors>
         <owners>Nubuo</owners>
-        <licenseUrl>http://scripts.sil.org/OFL</licenseUrl>
-        <projectUrl>http://www.levien.com/type/myfonts/inconsolata.html</projectUrl>
+        <licenseUrl>https://scripts.sil.org/OFL</licenseUrl>
+        <projectUrl>https://levien.com/type/myfonts/inconsolata.html</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Inconsolata is my first serious original font release. It is a monospace font, designed for code listings and the like, in print. There are a great many "programmer fonts," designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering.
-</description>
+        <summary>Monospace font by Raph Levien</summary>
+        <description>
+From https://levien.com/type/myfonts/inconsolata.html
+Inconsolata is my first serious original font release. It is a monospace font, designed for code listings and the like, in print. There are a great many "programmer fonts," designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering.
+
+Inconsolata draws from many inspirations and sources. I was particularly struck by the beauty of Luc(as) de Groot's Consolas, which is his monospaced design for Microsoft's upcoming Vista release. This font, similar to his earlier TheSansMono, demonstrated clearly to me that monospaced fonts do not have to suck.
+
+First and foremost, Inconsolata is a humanist sans design. I strove for the clarity and clean lines of Adrian Frutiger's Avenir (the lowercase "a", in particular, pays homage to this wonderful design), but also looked to Morris Fuller Benton's Franklin Gothic family for guidance on some of my favorite glyphs, such as lowercase "g" and "S", and, most especially, the numerals.
+
+Designing a monospace font poses unique challenges. I have carefully studied many other monospaced fonts to see how they solve these problems. Many of the available monospace fonts are adaptations of existing proportionally-spaced fonts, but some, such as Letter Gothic, draw strength from being their own designs. I hope Inconsolata upholds that tradition.
+
+Some details will be most apparent in print, such as the subtle curves in lowercase "t", "v", "w", and "y". Inconsolata also borrows "micro-serifs" from some Japanese Gothic fonts, which enhance the appearance of crispness and legibility.
+        </description>
         <tags>font monospace inconsolata mono fixedWidth fixed</tags>
         <packageSourceUrl>https://github.com/cprivite/chocolatey/tree/master/inconsolata</packageSourceUrl>
         <releaseNotes>
           2017.05.01
 
-          Doing a quick update to the release to get it downloading the current font files. Inconsolata is now version 2.001. The version is the data that 2.001 was committed to the repository.
+          Inconsolata is now version 2.001. The chocolatey package version number is the date that 2.001 was committed to the repository.
 
-          There's more to be done for this package like making it work unattended, not using raw github links for the downloads, and actually doing an uninstall of the fonts, but that will need to come later.
-
-          If you are upgrading from the older 2014.12.31 release, the older font will still be in your font directory (the older font is a .otf, the newer ones are .ttf). You'll need to manually delete it via the Windows Font control panel. I considered deleting it with a modify script, but given how raw this package is it didn't feel like a good plan to manually delete files out of your system font directory.
+          If you are upgrading from the older 2014.12.31 release, the package will attempt to delete the old font from your font directory. If it fails, you'll need to manually delete it via the Windows Font control panel.
         </releaseNotes>
+        <dependencies>
+            <dependency id="chocolatey-font-helpers.extension" version="0.0.2" />
+        </dependencies>
     </metadata>
 </package>
