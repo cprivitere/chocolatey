@@ -1,7 +1,7 @@
 Install-ChocolateyPackage `
   -PackageName 'cheatengine' `
-  -Url 'https://github.com/cheat-engine/cheat-engine/releases/download/7.0/CheatEngine70.exe' `
-  -Checksum '316CEFAD212B492CE0A67BBEE42209AA37F454827F8DA3A992E4BC45CC2CFAB6' `
+  -Url 'https://github.com/cheat-engine/cheat-engine/releases/download/7.1/CheatEngine71.exe' `
+  -Checksum 'DF54B77363500D9795AB43D78A55989200B66974A2EAF90898FA9ACE240659E4' `
   -ChecksumType 'SHA256' `
   -FileType 'EXE' `
   -Silent '/VERYSILENT /NORESTART /NOCANDY'
